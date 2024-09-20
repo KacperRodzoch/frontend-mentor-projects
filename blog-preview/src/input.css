@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Figtree";
+    src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  p {
+    @apply text-gray-950 text-xs sm:text-sm font-normal;
+  }
+}
+
+.bodyContainer {
+  @apply flex justify-center items-center font-Figtree min-h-screen bg-yellow;
+}
+
+.mainContainer {
+  @apply flex flex-col bg-white p-250 rounded-3xl border drop-shadow-3xl mx-250 max-w-96;
+}
+
+.authorContainer {
+  @apply flex flex-row items-center;
+}
+
+.yellowBox {
+  @apply bg-yellow rounded-md py-50 px-150 mb-150 w-fit;
+}
+
+.blogHeader {
+  @apply text-gray-950 text-lg sm:text-xl font-extrabold hover:text-yellow duration-300;
+}
+
+.blogDescription {
+  @apply text-gray-500 text-sm sm:text-base;
+}
