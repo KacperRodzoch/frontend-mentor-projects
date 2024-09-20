@@ -557,23 +557,33 @@ video {
 @font-face {
   font-family: "Inter-Bold";
 
-  src: url("/assets/fonts/static/Inter-Bold.ttf");
+  src: url("../assets/fonts/static/Inter-Bold.ttf");
+
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Inter-SemiBold";
 
-  src: url("/assets/fonts/static/Inter-SemiBold.ttf");
+  src: url("../assets/fonts/static/Inter-SemiBold.ttf");
+
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Inter-Regular";
 
-  src: url("/assets/fonts/static/Inter-Regular.ttf");
+  src: url("../assets/fonts/static/Inter-Regular.ttf");
+
+  font-display: swap;
 }
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mt-12 {
@@ -606,12 +616,6 @@ video {
 
 .justify-center {
   justify-content: center;
-}
-
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .rounded-full {
@@ -654,12 +658,20 @@ video {
   text-align: center;
 }
 
+.align-bottom {
+  vertical-align: bottom;
+}
+
+.font-interBold {
+  font-family: Inter-Bold;
+}
+
 .font-interRegular {
-  font-family: Inter-Regular, sans-serif;
+  font-family: Inter-Regular;
 }
 
 .font-interSemiBold {
-  font-family: Inter-SemiBold, sans-serif;
+  font-family: Inter-SemiBold;
 }
 
 .text-2xl {
@@ -670,6 +682,10 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .text-green {

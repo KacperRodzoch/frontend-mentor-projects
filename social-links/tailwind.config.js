@@ -3,9 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     fontFamily: {
-      'interBold': ['Inter-Bold', 'sans-serif'],
-      'interSemiBold': ['Inter-SemiBold', 'sans-serif'],
-      'interRegular': ['Inter-Regular', 'sans-serif'],
+      'interBold': ['Inter-Bold'],
+      'interSemiBold': ['Inter-SemiBold'],
+      'interRegular': ['Inter-Regular'],
     },
     colors: {
       transparent: 'transparent',
