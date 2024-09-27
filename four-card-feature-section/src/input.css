@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200 400 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  h1 {
+    @apply text-2xl sm:text-4xl text-Very_Dark_Blue;
+  }
+
+  h2 {
+    @apply text-Very_Dark_Blue text-xl font-semibold;
+  }
+
+  p {
+    @apply text-Grayish_Blue text-sm mt-2;
+  }
+}
+
+.globalContainer {
+  @apply flex flex-col bg-Very_Light_Gray font-Poppins justify-center items-center min-h-screen py-20;
+}
+
+.headerContainer {
+  @apply text-center w-9/10 max-w-136 mb-16;
+}
+
+.gridContainer {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-center w-9/10 max-w-screen-lg;
+}
+
+.card {
+  @apply flex flex-col bg-white text-left rounded-lg border-t-4 shadow-md shadow-Grayish_Blue max-w-88 min-h-56 p-6 mx-auto;
+}
