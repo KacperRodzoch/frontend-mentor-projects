@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Red Hat Display", sans-serif;
+
+    --breakpoint-3xl: 120rem;
+
+    --color-cyan-600: #4D96A9;
+    --color-cyan-300: #8FE3F9;
+    --color-purple-600: #855FB1;
+    --color-purple-300: #D9B8FF;
+    --color-slate-900: #28283D;
+    --color-slate-600: #87879D;
+    --color-slate-300: #D1D1DF;
+    --color-white: #FAFAFA;
+
+    --text-6xl: 4rem;
+    --text-4xl: 2.5rem;
+
+    --leading-normal: 110%;
+    --leading-loose: 150%;
+
+    --tracking-widest: 0.25em;
+
+    --spacing-1400: 7rem;
+    --spacing-1000: 5rem;
+    --spacing-900: 4.5rem;
+    --spacing-800: 4rem;
+    --spacing-700: 3.5rem;
+    --spacing-500: 2.5rem;
+    --spacing-400: 2rem;
+    --spacing-300: 1.5rem;
+    --spacing-200: 1rem;
+    --spacing-100: 0.5rem;
+    --spacing-50: 0.25rem;
+
+}
+
+.step-marker {
+    width: var(--spacing-700);
+    height: var(--spacing-700);
+    background-color: var(--color-white);
+    border-radius: 50%;
+    color: var(--color-slate-600);
+    font-weight: var(--font-weight-black);
+    font-size: var(--text-base);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid var(--color-slate-300);
+}
+
+.step-marker::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: var(--color-slate-300);
+    height: var(--spacing-1000);
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}

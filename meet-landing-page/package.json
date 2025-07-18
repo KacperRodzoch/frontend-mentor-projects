@@ -1,0 +1,21 @@
+{
+  "name": "meet-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page for Meet application.",
+  "license": "ISC",
+  "author": "Kacper Rodzoch",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"live-server src --port=3000\" \"npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --watch\""
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "live-server": "^1.2.2",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
